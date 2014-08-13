@@ -56,10 +56,11 @@
 			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
 				<h1>Agenda :</h1>
 				<ul>
-					<li>What is JavaScript?</li>
-					<li>JavaScript Syntax</li>
-					<li>Document Object Model (DOM)</li>
-					<li>Chrome : JavaScript Console</li>
+					<li class="ft-fragment step">What is JavaScript?</li>
+					<li class="ft-fragment step">JavaScript Syntax</li>
+					<li class="ft-fragment step">JavaScript Objects</li>
+					<li class="ft-fragment step">Chrome : JavaScript Console</li>
+					<li class="ft-fragment step">Document Object Model (DOM)</li>
 				</ul>
 			</div>
 
@@ -79,14 +80,14 @@
 		<div class="ft-section" data-id="section-2">
 			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
 				<h1>What is JavaScript?</h1>
-				<p>Website = HTML + CSS + JavaScript</p>
-				<h6>JavaScript :</h6>
+				<p class="ft-fragment step">Website = HTML + CSS + JavaScript</p>
+				<h6 class="ft-fragment step">JavaScript :</h6>
 				<ul>
-					<li>Scripting Language that is used to render dynamic content on webpages.</li>
-					<li>Embedded in your HTML page and interpreted by Web Browsers.</li>
-					<li>Its functionality can be extended to Object Oriented Programming.</li>
-					<li>External JavaScript files have '.js' extension.</li>
-					<li>JavaScript ≠ Java</li>
+					<li class="ft-fragment step">Scripting Language that is used to render dynamic content on webpages.</li>
+					<li class="ft-fragment step">Embedded in your HTML page and interpreted by Web Browsers.</li>
+					<li class="ft-fragment step">Its functionality can be extended to Object Oriented Programming.</li>
+					<li class="ft-fragment step">External JavaScript files have '.js' extension.</li>
+					<li class="ft-fragment step">JavaScript ≠ Java</li>
 				</ul>
 
 			</div>
@@ -298,34 +299,10 @@
 
 
 <!--JavaScript Syntax-->
+
 		<div class="ft-section" data-id="section-3">
 			<div id="/section-3/page-1" class="ft-page" data-id="page-1">
 				<h1>JavaScript Syntax</h1>
-				<p>JavaScript Data Types</p>
-
-				<ul>
-					<li class="ft-fragment step">JavaScript has <strong>dynamic</strong> datatypes - same variable can be used for different datatypes.</li>
-				</ul>
-					
-					<xmp class="ft-fragment step">
-					var x; 		//Undefined
-					var x = 42; 	//Int
-					var x = 3.14; 	//Float
-					
-					var x = "I am a Variable!"; //String
-					</xmp>
-				<ul>	
-					<li class="ft-fragment step"> <a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/7.html" target="_blank">#7</a> Demo</li>
-
-					<li class="ft-fragment step">Every variable in JavaScript can be considered as an <strong>object</strong>.</li>
-
-					<li class="ft-fragment step">Boolean</li>
-				</ul>
-				
-			</div>
-
-			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
-				<h1>JavaScript Variables</h1>
 				<ul>
 					<li class="ft-fragment step">JavaScript <strong>variables</strong> are used to store data.</li>
 				</ul>
@@ -343,24 +320,123 @@
 				<xmp class="ft-fragment step">
 				var x , y = 5, z = "Hello World!";
 				</xmp>
+				</ul>
 
+				<h1 class="ft-fragment step">JavaScript Functions</h1>
+					
+				<xmp class="ft-fragment step">
+				function my_function(parameter1,parameter2) {
+					
+					//CODE
 				
+				}
+				</xmp>
+				
+			</div>
+
+			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
+				<h1>JavaScript Data Types</h1>
+
+				<ul>
+					<li class="ft-fragment step">JavaScript has <strong>dynamic</strong> datatypes - same variable can be used for different datatypes.</li>
+				</ul>
+					
+					<xmp class="ft-fragment step">
+					var x; 		//Undefined
+					var x = 42; 	//Int
+					var x = 3.14; 	//Float
+					
+					var x = "I am a Variable!"; //String
+					</xmp>
+				<ul>	
+					<li class="ft-fragment step"> <a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/7.html" target="_blank">#7</a> Demo</li>
+
+
+					<li class="ft-fragment step">Boolean</li>
+			</div>
+
+			<div id="/section-3/page-3" class="ft-page" data-id="page-3">
+				<h1>Events</h1>
+
+				<ul>
+					<li class="ft-fragment step">JavaScript can be used to trigger HTML event changes.</li>
+				</ul>
+
+				<p class="ft-fragment step">HTML Events :</p>
+				<ul>
+					<li class="ft-fragment step">HTML Web Page has finished loading</li>
+					<li class="ft-fragment step">Input field or Textbox entry was changed</li>
+					<li class="ft-fragment step">Button Click - onClick</li>
+
+					<li class="ft-fragment step"> <a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/8.html" target="_blank">#8</a> Demo - Hover</li>
+				</ul>
 			</div>
 		</div>
 
-<!--DOM-->
+<!--JavaScript Objects-->
 
 		<div class="ft-section" data-id="section-4">
 			<div id="/section-4/page-1" class="ft-page" data-id="page-1">
-				<h1>Document Object Model (DOM)</h1>
+				<h1>JavaScript Objects</h1>
+				<ul>
+					<li class="ft-fragment step">JavaScript Objects are variables with <strong>Properties</strong> & <strong>Methods</strong>.</li>
+					<li class="ft-fragment step"><strong>Properties</strong> are values associated with the object.</li>
+					<li class="ft-fragment step"><strong>Methods</strong> are actions that the objects can perform.</li>
+				</ul>
+				<p class="ft-fragment step">Example : Car</p>
+				<ul>
+					<li class="ft-fragment step">Properties</li>
+				</ul>
+					<xmp class="ft-fragment step">
+						car.name = Ford;
+						car.model = Figo;
+						car.color = Black;
+					</xmp>
 
 				<ul>
-					<li class="ft-fragment step">JavaScript is used to manipulate the DOM i.e manipulate HTML elements.</li>
+					<li class="ft-fragment step">Methods</li>
 				</ul>
-			</div>
-			<div id="/section-4/page-2" class="ft-page" data-id="page-2">
+					<xmp class="ft-fragment step">
+						car.start();
+						car.drive();
+						car.brake();
+						car.stop();
+					</xmp>
 				
 			</div>
+
+			<div id="/section-4/page-2" class="ft-page" data-id="page-2">
+				<h1>JavaScript Objects</h1>
+				<ul>
+					<li class="ft-fragment step">Almost everything in JavaScript is treated as an <strong>Object</strong>.</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+			var person = {	firstName : "Kartik",
+    					lastName : "Kannapur",
+    					age : 22,
+    					org : "GDG Bangalore",
+    					fullName : function() {return person.firstName + " " + person.lastName}
+    					};
+    			</xmp>
+
+    			<ul>
+    				<li class="ft-fragment step"><strong>Chrome : JavaScript Console</strong></li>
+					<li class="ft-fragment step">Accessing Object Properties</li>
+				</ul>
+				<xmp class="ft-fragment step">
+					> person;
+					> person.age;
+    			</xmp>
+
+    			<ul>
+    				<li class="ft-fragment step">Accessing Object Methods</li>
+    			</ul>	
+				<xmp class="ft-fragment step">
+					> person.fullName();
+    			</xmp>
+			</div>
+
 			<div id="/section-4/page-3" class="ft-page" data-id="page-3">
 				<h1>Ordered Lists</h1>
 				<ol>
@@ -408,7 +484,8 @@
 		<div class="ft-section" data-id="section-5">
 			<div id="/section-5/page-1" class="ft-page" data-id="page-1">
 				<h1>Chrome : JavaScript Console</h1>
-				
+				<h1>document.body.contentEditable = true</h1>
+				<h1>as a calculator</h1>
 			</div>
 			<div id="/section-5/page-2" class="ft-page" data-id="page-2" data-title="Fluid Images">
 				<a href="http://www.genereavventura.com" target="_blank"><img src="assets/img/genereavventura.jpg"></a>
@@ -445,13 +522,15 @@
 			</div>
 		</div>
 
+<!--DOM-->
+
 		<div class="ft-section" data-id="section-6">
 			<div id="/section-6/page-1" class="ft-page" data-id="page-1">
-				<h1>Native Parallax Support</h1>
-				<p>By popular demand Flowtime.js includes native parallax support*.</p>
-				<p>Simply add a <code>parallax</code> class to anything you want to have parallax enabled and configure the amount of distance for all elements or for a single element using <code>data-parallax</code> attribute.</p>
-				<p>For an example go to the <a href="#/section-6/page-2">next page</a>; for more info read the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a>.</p>
-				<p><span class="small">* By the way: I’m not a parallax fan; but ehi… this is the "web 3.0".</span></p>
+				<h1>Document Object Model (DOM)</h1>
+
+				<ul>
+					<li class="ft-fragment step">JavaScript is used to manipulate the DOM i.e manipulate HTML elements.</li>
+				</ul>
 			</div>
 			<div id="/section-6/page-2" class="ft-page parallax-demo" data-id="page-2">
 				<h1>The Invaders from Audiogalaxy</h1>
