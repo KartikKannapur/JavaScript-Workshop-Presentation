@@ -57,7 +57,9 @@
 				<h1>Agenda :</h1>
 				<ul>
 					<li>What is JavaScript?</li>
-					<li>Operators in JavaScript</li>
+					<li>JavaScript Syntax</li>
+					<li>Document Object Model (DOM)</li>
+					<li>Chrome : JavaScript Console</li>
 				</ul>
 			</div>
 
@@ -90,7 +92,7 @@
 			</div>
 
 			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
-				<h1>Your First Script!</h1>
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/1.html" target="_blank">#1</a> Your First Script!</h1>
 				
 				<xmp>
 				<!DOCTYPE HTML>
@@ -101,7 +103,7 @@
 
 					<body>
   						<script type="text/javascript">
-     						alert('Hello World!');
+     							alert('Hello World!');
   						</script>	
 					</body>
 				</html> 
@@ -109,13 +111,14 @@
 
 				<ul>
 				<li class="ft-fragment step">JavaScript code gets executed when the webpage loads or an event is triggered.</li>
+				<li class="ft-fragment step">You can place any number of script tags in a HTML document.</li>
 				<li class="ft-fragment step">However, only <strong>1</strong> block of JavaScript code can be executed at a time.</li>
 				</ul>
 			</div>
 
 
 			<div id="/section-2/page-3" class="ft-page" data-id="page-3">
-				<h1>Let's display it ...</h1>
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/2.html" target="_blank">#2</a> Let's display it ...</h1>
 				
 				<xmp>
 				<!DOCTYPE HTML>
@@ -131,11 +134,16 @@
 					</body>
 				</html> 
 				</xmp>
+
+				<ul>
+				<li class="ft-fragment step">JavaScript does not have any print or output functions.</li>
+				<li class="ft-fragment step">It is used to manipulate HTML documents.</li>
+				</ul>
 			</div>
 
 
 			<div id="/section-2/page-4" class="ft-page" data-id="page-4">
-				<h1>Reendering HTML within a Document</h1>
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/3.html" target="_blank">#3</a> Rendering HTML within a Document</h1>
 				
 				<xmp>
 				<!DOCTYPE HTML>
@@ -155,7 +163,7 @@
 			</div>
 
 			<div id="/section-2/page-5" class="ft-page" data-id="page-5">
-				<h1>Image OnClick()</h1>
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/4.html" target="_blank">#4</a> Image OnClick()</h1>
 				
 				<xmp class="ft-fragment step"> 
 				<!DOCTYPE HTML>
@@ -225,50 +233,133 @@
 				</xmp>
 			</div>
 			
+			<div id="/section-2/page-7" class="ft-page" data-id="page-7">
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/5.html" target="_blank">#5</a> Dialog Boxes</h1>
+				
+				<ul>
+					<li class="ft-fragment step">Alert </li>
+					<li class="ft-fragment step">Confirmation</li>
+					<li class="ft-fragment step">Prompt</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+				<!DOCTYPE HTML>
+				<html>
+					<head>
+						<title>JavaScript</title>
+					</head>	
+
+					<body>
+  						<script type="text/javascript">
+     						confirm('This is a Confirmation Box. Are you sure?');
+     						prompt('This is a Prompt. Enter a value: ');
+  						</script>	
+					</body>
+				</html> 
+				</xmp>
+
+				<ul>
+					<li class="ft-fragment step"><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/calc.html" target="_blank">#Demo</a> Calculator</li>
+				</ul>
+			</div>
+
+			<div id="/section-2/page-8" class="ft-page" data-id="page-8">
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/6.html" target="_blank">#6</a> Debugging</h1>
+				
+				<ul>
+					<li class="ft-fragment step">If your browser supports debugging, you can use the console.log() method to display JavaScript values in the browser.</li>
+				</ul>
+					
+				<p class="ft-fragment step">Activate Debugging</p>
+				<ul>
+					<li class="ft-fragment step"><strong>Chrome:</strong> Inspect element -> Console ||  Settings -> Tools -> JavaScript Console</li>
+					<li class="ft-fragment step"><strong>Firefox:</strong> Tools -> Web Developer -> Browser Toolbox -> Console</li>
+					<li class="ft-fragment step">IE, Safari, Opera etc. - You can find it.</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+				<!DOCTYPE HTML>
+				<html>
+					<head>
+						<title>JavaScript Debugging</title>
+					</head>	
+					<body>
+  						<script type="text/javascript">
+     						console.log('Hello World!');
+  						</script>	
+					</body>
+				</html> 
+				</xmp>
+
+				
+			</div>
+
 		</div>
 
 
-<!--Operators in JavaScript-->
+<!--JavaScript Syntax-->
 		<div class="ft-section" data-id="section-3">
 			<div id="/section-3/page-1" class="ft-page" data-id="page-1">
-				<h1>Fragments Support</h1>
-				<p>The built in fragments navigation allows to advance step by step inside a page.<br>
-					Press down to try.</p>
-				<p class="ft-fragment">You can discover single elements <span class="ft-fragment">or even a single part of an element, <span class="ft-fragment">one <span class="ft-fragment">at <span class="ft-fragment">a <span class="ft-fragment">time.</span></span></span></span></span></p>
-				<p class="ft-fragment">Fragments navigation is deeply customizable with some configuration options<br>
-					You can learn how in the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a>.</p>
-			</div>
-			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
-				<h1>Fragments Unleashed</h1>
-				<p>Fragments can be more than just delayed piece of page.<p>
-				<p>Thanks to some special classes you can add a couple of useful custom behaviours.</p>
+				<h1>JavaScript Syntax</h1>
+				<p>JavaScript Data Types</p>
+
 				<ul>
-					<li class="ft-fragment step">The <code>.step</code> fragment will partially fades out;</li>
-					<li class="ft-fragment shy">The <code>.shy</code> fragment will completely hides itself;</li>
-					<li class="ft-fragment">You can use this two special fragment types to easily create special effects.</li>
+					<li class="ft-fragment step">JavaScript has <strong>dynamic</strong> datatypes - same variable can be used for different datatypes.</li>
 				</ul>
-				<p><span class="ft-fragment shy">This</span> <span class="ft-fragment shy">is</span> <span class="ft-fragment shy">a</span> <span class="ft-fragment shy"><code>.shy</code></span> <span class="ft-fragment shy">example!</span></p>
-				<p><span class="ft-fragment step">And</span> <span class="ft-fragment step">this</span> <span class="ft-fragment step">is</span> <span class="ft-fragment step">a</span> <span class="ft-fragment step"><code>.step</code></span> <span class="ft-fragment step">one!</span></p>
+					
+					<xmp class="ft-fragment step">
+					var x; 		//Undefined
+					var x = 42; 	//Int
+					var x = 3.14; 	//Float
+					
+					var x = "I am a Variable!"; //String
+					</xmp>
+				<ul>	
+					<li class="ft-fragment step"> <a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/7.html" target="_blank">#7</a> Demo</li>
+
+					<li class="ft-fragment step">Every variable in JavaScript can be considered as an <strong>object</strong>.</li>
+
+					<li class="ft-fragment step">Boolean</li>
+				</ul>
+				
+			</div>
+
+			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
+				<h1>JavaScript Variables</h1>
+				<ul>
+					<li class="ft-fragment step">JavaScript <strong>variables</strong> are used to store data.</li>
+				</ul>
+					
+				<xmp class="ft-fragment step">
+				var x;
+				var y = 5;
+				var z = "Hello World!";
+				</xmp>
+
+				<xmp class="ft-fragment step">
+				var x; var y = 5; var z = "Hello World!";
+				</xmp>
+
+				<xmp class="ft-fragment step">
+				var x , y = 5, z = "Hello World!";
+				</xmp>
+
+				
 			</div>
 		</div>
+
+<!--DOM-->
 
 		<div class="ft-section" data-id="section-4">
 			<div id="/section-4/page-1" class="ft-page" data-id="page-1">
-				<h1>Default HTML Structures</h1>
-				<p>Flowtime.js comes with a default theme that styles the most common HTML structures, like:</p>
-				<h1>1<sup>st</sup> Level Heading</h1>
-				<h2>2<sup>nd</sup> Level Heading</h2>
-				<h3>3<sup>rd</sup> Level Heading</h3>
-				<h4>4<sup>th</sup>, 5<sup>th</sup> and 6<sup>th</sup> Level Heading</h4>
+				<h1>Document Object Model (DOM)</h1>
+
+				<ul>
+					<li class="ft-fragment step">JavaScript is used to manipulate the DOM i.e manipulate HTML elements.</li>
+				</ul>
 			</div>
 			<div id="/section-4/page-2" class="ft-page" data-id="page-2">
-				<h1>Unordered Lists</h1>
-				<ul>
-					<li>An item.</li>
-					<li>Another item.</li>
-					<li>Just another item.</li>
-					<li>Ok, we get it!</li>
-				</ul>
+				
 			</div>
 			<div id="/section-4/page-3" class="ft-page" data-id="page-3">
 				<h1>Ordered Lists</h1>
@@ -312,13 +403,12 @@
 			</div>
 		</div>
 
+<!--Chrome : JavaScript Console-->
+
 		<div class="ft-section" data-id="section-5">
 			<div id="/section-5/page-1" class="ft-page" data-id="page-1">
-				<h1>Image Management</h1>
-				<p>Images are fluid like all the other content.</p>
-				<p>You can insert images in the flow or stack images ones on top the others with a minimal markup overhead to create some fancy fragments tricks.</p>
-				<p>Go to the next pages to see fluid images in action and how stacked images can be managed, both in the flow or centered in the slide.<br>
-					Look at the source code to learn how to write the markup.</p>
+				<h1>Chrome : JavaScript Console</h1>
+				
 			</div>
 			<div id="/section-5/page-2" class="ft-page" data-id="page-2" data-title="Fluid Images">
 				<a href="http://www.genereavventura.com" target="_blank"><img src="assets/img/genereavventura.jpg"></a>
@@ -424,7 +514,6 @@
 		</div>
 	</div>
 
-	<a href="https://github.com/marcolago/flowtime.js"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
 
 	<script src="js/brav1toolbox.js"></script>
 	<script src="js/flowtime.js"></script>
