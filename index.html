@@ -20,6 +20,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="author" content="Kartik Kannapur">
 
+	<link rel="icon" type="image/png" href="assets/img/gdg-program-icon.png"/>
 	
 	<title>JavaScript & Google Apps Script</title>
 	<link rel="stylesheet" href="assets/css/reset.css">
@@ -86,7 +87,6 @@
 				<ul>
 					<li class="ft-fragment step">Scripting Language that is used to render dynamic content on webpages.</li>
 					<li class="ft-fragment step">Embedded in your HTML page and interpreted by Web Browsers.</li>
-					<li class="ft-fragment step">Its functionality can be extended to Object Oriented Programming.</li>
 					<li class="ft-fragment step">External JavaScript files have '.js' extension.</li>
 					<li class="ft-fragment step">JavaScript ≠ Java</li>
 				</ul>
@@ -357,8 +357,8 @@
 					
 					<xmp class="ft-fragment step">
 					var x; 		//Undefined
-					var x = 42; 	//Int
-					var x = 3.14; 	//Float
+					var x = 42; 	//Int - Number
+					var x = 3.14; 	//Float - Number
 					
 					var x = "I am a Variable!"; //String
 					</xmp>
@@ -417,7 +417,6 @@
 				</xmp>
 
 				<ul>
-					<li class="ft-fragment step">JavaScript variables can be Objects.</li>
 					<li class="ft-fragment step">An array can consist of variable of different datatypes.</li>
 					<li class="ft-fragment step">Arrays are Objects - typeof().</li>
 				</ul>
@@ -425,6 +424,10 @@
 				<xmp class="ft-fragment step">
 				var arr_types = [5,"Hello World",2.2];
 				</xmp>
+
+				<ul>
+					<li class="ft-fragment step">Arrays have pre-defined methods that allows us to use them as stacks.</li>
+				</ul>
 
 				<p class="ft-fragment step"><strong>Chrome : JavaScript Console</strong></p>
 			</div>
@@ -522,7 +525,7 @@
 
     			<ul>
     				<li class="ft-fragment step"><strong>Chrome : JavaScript Console</strong></li>
-					<li class="ft-fragment step">Accessing Object Properties</li>
+					<li class="ft-fragment step">Accessing Object Properties : Pre-defined or User-defined</li>
 				</ul>
 				<xmp class="ft-fragment step">
 					> person;
@@ -538,6 +541,24 @@
 			</div>
 
 			<div id="/section-4/page-3" class="ft-page" data-id="page-3">
+				<h1>JavaScript Objects</h1>
+				<ul>
+					<li class="ft-fragment step">Creating Objects using <strong>new Object()</strong></li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+					var person = new Object();
+
+					person.firstName = "Kartik";
+					person.lastName = "Kannapur";
+
+					> "Hello Mr. " + person.firstName + " " + person.lastName;
+    			</xmp>
+
+
+			</div>
+
+			<div id="/section-4/page-4" class="ft-page" data-id="page-4">
 				<h1>JavaScript Object Constructors</h1>
 				<ul>
 					<li class="ft-fragment step">Constructors help us create a set of similar objects.</li>
@@ -554,10 +575,22 @@
 			var myOtherName = new person("Kitrak", "Rupannak", 22);
     			</xmp>
 
+    			<ul>
+					<li class="ft-fragment step">Nested Notation</li>
+				</ul>
+
+    			<xmp class="ft-fragment step">	
+
+    			var person = {
+    				person1 : {firstName : "Kartik", lastName : "Kannapur"},
+    				person2 : {firstName : "Kitrak", lastName : "Rupannak"}
+    			}
+    			</xmp>
+
     			
 			</div>
 
-			<div id="/section-4/page-4" class="ft-page" data-id="page-4">
+			<div id="/section-4/page-5" class="ft-page" data-id="page-5">
 				<h1>JSON</h1>
 				<ul>
 					<li class="ft-fragment step"><strong>J</strong>ava<strong>S</strong>cript   <strong>O</strong>bject   <strong>N</strong>otation</li>
@@ -588,7 +621,7 @@
 				</xmp>
 			</div>
 
-			<div id="/section-4/page-5" class="ft-page" data-id="page-5">
+			<div id="/section-4/page-6" class="ft-page" data-id="page-6">
 				<p><strong>Chrome : JavaScript Console</strong></p>
 
 				<ul>
