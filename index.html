@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
   <head>
@@ -513,3 +514,916 @@ You can change the way this parts appears editing or overwriting some CSS proper
 
   </body>
 </html>
+=======
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0 minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="Kartik Kannapur">
+
+	<link rel="icon" type="image/png" href="assets/img/gdg-program-icon.png"/>
+	
+	<title>JavaScript & Google Apps Script</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="css/flowtime.css">
+	<link rel="stylesheet" href="css/themes/default.css">
+	<link rel="stylesheet" href="assets/css/prism.css">
+
+
+	<link rel="apple-touch-icon-precomposed" 						href="img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="72x72" 		href="img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="114x114" 	href="img/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="144x144" 	href="img/touch-icon-ipad-retina.png">
+
+	<link rel="apple-touch-startup-image" href="img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+
+</head>
+
+<!--PRESENTATION CONTENT-->
+<body class="">
+
+	<div class="flowtime">
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="Introduction to JavaScript & Google Apps Script">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<p class="page-title"><h1>Introduction to JavaScript & Google Apps Script</h1></p>
+						<a href="#/section-1/page-2"><img src="assets/img/gdg-bangalore.png"></a><p><h3>Kartik Kannapur</h3></p>
+						<p><h3>Google Developer Group Bangalore</h3></p>
+					</div>
+				</div>
+			</div>
+
+			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
+				<h1>Agenda :</h1>
+				<ul>
+					<li class="ft-fragment step">What is JavaScript?</li>
+					<li class="ft-fragment step">JavaScript Syntax</li>
+					<li class="ft-fragment step">Chrome Developer Tools</li>
+					<li class="ft-fragment step">Document Object Model (DOM)</li>
+					<li class="ft-fragment step">Google Apps Script</li>
+					
+				</ul>
+			</div>
+
+			<div id="/section-1/page-3" class="ft-page" data-id="page-3">
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<p class="page-title"><h1><strong>Disclaimer :</strong> This Presentation has been coded in HTML, CSS & JavaScript.</h1></p>
+				
+			</div>
+
+<!--What is JavaScript?-->			
+		
+		</div>
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
+				<h1><a href="file:///home/kartik/Desktop/JavaScript-Workshop-Presentation/index.html#/section-1/page-2">#</a>What is JavaScript?</h1>
+				<p class="ft-fragment step">Website = HTML + CSS + JavaScript</p>
+				<h6 class="ft-fragment step">JavaScript :</h6>
+				<ul>
+					<li class="ft-fragment step">Scripting Language that is used to render dynamic content on webpages.</li>
+					<li class="ft-fragment step">Embedded in your HTML page and interpreted by Web Browsers.</li>
+					<li class="ft-fragment step">External JavaScript files have '.js' extension.</li>
+					<li class="ft-fragment step">JavaScript ≠ Java</li>
+					<li class="ft-fragment step">JavaScript is Case Sensitive.</li>
+				</ul>
+
+			</div>
+
+			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/1.html" target="_blank">#1</a> Your First Script!</h1>
+				
+				<xmp>
+				<!DOCTYPE HTML>
+				<html>
+					<head>
+						<title>My First Script</title>
+					</head>	
+
+					<body>
+  						<script type="text/javascript">
+     							alert('Hello World!');
+  						</script>	
+					</body>
+				</html> 
+				</xmp>		
+
+				<ul>
+				<li class="ft-fragment step">JavaScript code gets executed when the webpage loads or an event is triggered.</li>
+				<li class="ft-fragment step">You can place any number of script tags in a HTML document.</li>
+				<li class="ft-fragment step">However, only <strong>1</strong> block of JavaScript code can be executed at a time.</li>
+				</ul>
+			</div>
+
+
+			<div id="/section-2/page-3" class="ft-page" data-id="page-3">
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/2.html" target="_blank">#2</a> Let's display it ...</h1>
+				
+				<xmp>
+				<!DOCTYPE HTML>
+				<html>
+					<head>
+						<title>JavaScript</title>
+					</head>	
+
+					<body>
+  						<script type="text/javascript">
+     						document.write('I am learning JavaScript!');
+  						</script>	
+					</body>
+				</html> 
+				</xmp>
+
+				<ul>
+				<li class="ft-fragment step">JavaScript does not have any print or output functions.</li>
+				<li class="ft-fragment step">It is used to manipulate HTML documents.</li>
+				</ul>
+			</div>
+
+
+			<div id="/section-2/page-4" class="ft-page" data-id="page-4">
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/3.html" target="_blank">#3</a> Rendering HTML within a Document</h1>
+				
+				<xmp>
+				<!DOCTYPE HTML>
+				<html>
+					<head>
+						<title>JavaScript</title>
+					</head>	
+
+					<body>
+  						<script type="text/javascript">
+     						document.write('<b>This should be bold</b>');
+     						document.write('This is normal text');
+  						</script>	
+					</body>
+				</html> 
+				</xmp>
+			</div>
+
+			<div id="/section-2/page-5" class="ft-page" data-id="page-5">
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/4.html" target="_blank">#4</a> Image OnClick()</h1>
+				
+				<xmp class="ft-fragment step"> 
+				<!DOCTYPE HTML>
+				<html>
+					<head>
+						<title>OnClick</title>
+					</head>	
+
+					<body>
+  						<img src="assets/img/gdg-bangalore.png"
+  						onclick="alert('You clicked on the Image!')" />
+  						
+  						<script type="text/javascript">
+  						</script>	
+					</body>
+				</html> 
+				</xmp>
+
+				
+				<xmp class="ft-fragment step">
+				<body>
+  					<img src="assets/img/gdg-bangalore.png" 
+  					onclick="func_name('You clicked on the Image!')" />
+
+  					<script type="text/javascript">
+  						function func_name(message) {
+    						alert(message);}
+  					</script>	
+				</body> 
+				</xmp>
+				</li>
+
+				
+			</div>				
+
+			<div id="/section-2/page-6" class="ft-page" data-id="page-6">
+				<h1>Your Turn!</h1>
+				
+				<ul>
+				<li class="ft-fragment step">The same thing can be written in an external script.js file as well.</li>
+				</ul>
+
+				<xmp class="ft-fragment step"> 
+				<!DOCTYPE HTML>
+				<html>
+					<head>
+						<title>OnClick</title>
+					</head>	
+
+					<body>
+  						<img src="assets/img/gdg-bangalore.png"
+  						onclick="func_name()" />
+  						
+  						<script src="script.js" type="text/javascript">
+  						</script>	
+					</body>
+				</html> 
+				</xmp>
+
+				<ul>
+				<li class="ft-fragment step">script.js file:</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+				function func_name() {
+				alert('You clicked on the Image!');}
+				</xmp>
+			</div>
+			
+			<div id="/section-2/page-7" class="ft-page" data-id="page-7">
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/5.html" target="_blank">#5</a> Dialog Boxes</h1>
+				
+				<ul>
+					<li class="ft-fragment step">Alert </li>
+					<li class="ft-fragment step">Confirmation</li>
+					<li class="ft-fragment step">Prompt</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+				<!DOCTYPE HTML>
+				<html>
+					<head>
+						<title>JavaScript</title>
+					</head>	
+
+					<body>
+  						<script type="text/javascript">
+     						confirm('This is a Confirmation Box. Are you sure?');
+     						prompt('This is a Prompt. Enter a value: ');
+  						</script>	
+					</body>
+				</html> 
+				</xmp>
+
+				<ul>
+					<li class="ft-fragment step"><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/calc.html" target="_blank">#Demo</a> Calculator</li>
+				</ul>
+			</div>
+
+			<div id="/section-2/page-8" class="ft-page" data-id="page-8">
+
+				<h1><a href="file:///home/kartik/Desktop/JavaScript-Workshop-Presentation/index.html#/section-1/page-2">#</a>Chrome Dev Tools</h1>
+				
+				<ul>
+					<p class="ft-fragment step">Chrome Developer Tools are a set of Web authoring & Debugging tools that are built into Google Chrome.</p>
+
+					<li class="ft-fragment step">Elements - DOM</li>
+					<li class="ft-fragment step">Sources a.k.a View Page Source</li>
+					<li class="ft-fragment step">Console - JavaScript Console</li>
+				</ul>
+
+				<ul>
+					<p class="ft-fragment step"><strong>Tips :</strong></p>
+					<li class="ft-fragment step">JavaScript Console works as a <strong>Calculator</strong>.</strong></li>
+					<li class="ft-fragment step">Edit Content in a Document-> <strong>document.body.contentEditable = true;</strong></li>
+
+				</ul>
+			</div>
+
+			<div id="/section-2/page-9" class="ft-page" data-id="page-9">
+
+
+
+
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/6.html" target="_blank">#6</a> Debugging</h1>
+				
+				<ul>
+					<li class="ft-fragment step">If your browser supports debugging, you can use the console.log() method to display JavaScript values in the browser.</li>
+				</ul>
+					
+				<p class="ft-fragment step">Activate Debugging</p>
+				<ul>
+					<li class="ft-fragment step"><strong>Chrome:</strong> Inspect element -> Console ||  Settings -> Tools -> JavaScript Console</li>
+					<li class="ft-fragment step"><strong>Firefox:</strong> Tools -> Web Developer -> Browser Toolbox -> Console</li>
+					<li class="ft-fragment step">IE, Safari, Opera etc. - You can find it.</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+				<!DOCTYPE HTML>
+				<html>
+					<head>
+						<title>JavaScript Debugging</title>
+					</head>	
+					<body>
+  						<script type="text/javascript">
+     						console.log('Hello World!');
+  						</script>	
+					</body>
+				</html> 
+				</xmp>
+
+			</div>
+
+		</div>
+
+
+<!--JavaScript Syntax-->
+
+		<div class="ft-section" data-id="section-3">
+			<div id="/section-3/page-1" class="ft-page" data-id="page-1">
+				<h1><a href="file:///home/kartik/Desktop/JavaScript-Workshop-Presentation/index.html#/section-1/page-2">#</a>JavaScript Syntax</h1>
+				<ul>
+					<li class="ft-fragment step">JavaScript <strong>variables</strong> are used to store data.</li>
+				</ul>
+					
+				<xmp class="ft-fragment step">
+				var x;
+				var y = 5;
+				var z = "Hello World!";
+				</xmp>
+
+				<xmp class="ft-fragment step">
+				var x; var y = 5; var z = "Hello World!";
+				</xmp>
+
+				<xmp class="ft-fragment step">
+				var x , y = 5, z = "Hello World!";
+				</xmp>
+				</ul>
+				
+			</div>
+
+			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
+				<h1>JavaScript Data Types</h1>
+
+				<ul>
+					<li class="ft-fragment step">JavaScript has <strong>dynamic</strong> datatypes - same variable can be used for different datatypes.</li>
+				</ul>
+					
+					<xmp class="ft-fragment step">
+					var x; 		//Undefined
+					var x = 42; 	//Int - Number
+					var x = 3.14; 	//Float - Number
+					
+					var x = "I am a Variable!"; //String
+					</xmp>
+				<ul>	
+					<li class="ft-fragment step"> <a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/7.html" target="_blank">#7</a> Demo</li>
+
+					<p class="ft-fragment step"><strong>Chrome : JavaScript Console</strong></p>
+
+					<li class="ft-fragment step">Strings</li>
+					<li class="ft-fragment step">Numbers</li>
+					<li class="ft-fragment step">Boolean</li>
+					<li class="ft-fragment step">Operators, Math, Date()</li>
+				</ul>
+			</div>
+
+			<div id="/section-3/page-3" class="ft-page" data-id="page-3">
+				<h1><a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/9.html" target="_blank">#9</a> JavaScript Functions</h1>
+				
+				<p>Syntax</p>	
+				<xmp class="ft-fragment step">
+				function my_function(parameters) {
+					code to be executed
+				}
+				</xmp>
+
+				<ul>
+					<li class="ft-fragment step">JavaScript functions can also be stored as variables.</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+				var x = function(a, b) {
+				return a * b
+				};
+				</xmp>
+
+				<ul>
+					<li class="ft-fragment step">Function can also be objects.</li>
+					<li class="ft-fragment step">Function parameter are passed by value.</li>
+					<li class="ft-fragment step">Function objects are passed by reference.</li>
+					<li class="ft-fragment step"><strong>"this"</strong> is the object that owns the current code.</li>
+				</ul>
+
+			</div>			
+
+			<div id="/section-3/page-4" class="ft-page" data-id="page-4">
+				<h1>Arrays</h1>
+
+				<ul>
+					<li class="ft-fragment step">Arrays are used to store multiple values in a single variable.</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+				var arr_name = [element1,element2, ...];
+
+				arr_name[0];
+				</xmp>
+
+				<ul>
+					<li class="ft-fragment step">An array can consist of variable of different datatypes.</li>
+					<li class="ft-fragment step">Arrays are Objects - typeof().</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+				var arr_types = [5,"Hello World",2.2];
+				</xmp>
+
+				<ul>
+					<li class="ft-fragment step">Arrays have pre-defined methods that allows us to use them as stacks.</li>
+				</ul>
+
+				<p class="ft-fragment step"><strong>Chrome : JavaScript Console</strong></p>
+			</div>
+
+			<div id="/section-3/page-5" class="ft-page" data-id="page-5">
+				<h1>JavaScript Type Conversion</h1>
+
+				<ul>
+					<li class="ft-fragment step">Number to String -> String(x)</li>
+					<li class="ft-fragment step">String to Number -> Number(x)</li>
+				</ul>
+
+				<p class="ft-fragment step"><strong>Chrome : JavaScript Console</strong></p>
+
+				<h1 class="ft-fragment step">Date()</h1>
+
+				<xmp class="ft-fragment step">
+				var d = new Date();
+				d.getTime();
+				</xmp>
+
+				<h1 class="ft-fragment step">Loops & Statements</h1>
+
+				<ul>
+					<li class="ft-fragment step">for, while, switch case, break-continue.</li>
+				</ul>
+
+
+			</div>
+			
+			<div id="/section-3/page-6" class="ft-page" data-id="page-6">
+				<h1>Events</h1>
+
+				<ul>
+					<li class="ft-fragment step">JavaScript can be used to trigger HTML event changes.</li>
+				</ul>
+
+				<p class="ft-fragment step">HTML Events :</p>
+				<ul>
+					<li class="ft-fragment step">HTML Web Page has finished loading</li>
+					<li class="ft-fragment step">Input field or Textbox entry was changed</li>
+					<li class="ft-fragment step">Button Click - onClick</li>
+
+					<li class="ft-fragment step"> <a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/8.html" target="_blank">#8</a> Demo - Hover</li>
+				</ul>
+			</div>
+	
+		</div>
+
+<!--JavaScript Objects and JSON-->
+
+		<div class="ft-section" data-id="section-4">
+			<div id="/section-4/page-1" class="ft-page" data-id="page-1">
+				<h1>JavaScript Objects</h1>
+				<ul>
+					<li class="ft-fragment step">JavaScript Objects are variables with <strong>Properties</strong> & <strong>Methods</strong>.</li>
+					<li class="ft-fragment step"><strong>Properties</strong> are values associated with the object. Each property has a name and a value.</li>
+					<li class="ft-fragment step"><strong>Methods</strong> are actions that the objects can perform.</li>
+				</ul>
+				<p class="ft-fragment step">Example : Car</p>
+				<ul>
+					<li class="ft-fragment step">Properties</li>
+				</ul>
+					<xmp class="ft-fragment step">
+						car.name = Ford;
+						car.model = Figo;
+						car.color = Black;
+					</xmp>
+
+				<ul>
+					<li class="ft-fragment step">Methods</li>
+				</ul>
+					<xmp class="ft-fragment step">
+						car.start();
+						car.drive();
+						car.brake();
+						car.stop();
+					</xmp>
+			</div>
+			
+			<div id="/section-4/page-2" class="ft-page" data-id="page-2">
+				<h1>JavaScript Objects</h1>
+				<ul>
+					<li class="ft-fragment step">Almost everything in JavaScript is treated as an <strong>Object</strong>.</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+			var person = {	firstName : "Kartik",
+    					lastName : "Kannapur",
+    					age : 22,
+    					org : "GDG Bangalore",
+    					fullName : function() {return person.firstName + " " + person.lastName}
+    					};
+    			</xmp>
+
+    			<ul>
+    				<li class="ft-fragment step"><strong>Chrome : JavaScript Console</strong></li>
+					<li class="ft-fragment step">Accessing Object Properties : Pre-defined or User-defined</li>
+				</ul>
+				<xmp class="ft-fragment step">
+					> person;
+					> person.age;
+    			</xmp>
+
+    			<ul>
+    				<li class="ft-fragment step">Accessing Object Methods</li>
+    			</ul>	
+				<xmp class="ft-fragment step">
+					> person.fullName();
+    			</xmp>
+			</div>
+
+			<div id="/section-4/page-3" class="ft-page" data-id="page-3">
+				<h1>JavaScript Objects</h1>
+				<ul>
+					<li class="ft-fragment step">Creating Objects using <strong>new Object()</strong></li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+					var person = new Object();
+
+					person.firstName = "Kartik";
+					person.lastName = "Kannapur";
+
+					> "Hello Mr. " + person.firstName + " " + person.lastName;
+    			</xmp>
+
+
+			</div>
+
+			<div id="/section-4/page-4" class="ft-page" data-id="page-4">
+				<h1>JavaScript Object Constructors</h1>
+				<ul>
+					<li class="ft-fragment step">Constructors help us create a set of similar objects.</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+			function person(first,last,age) {
+				this.firstName = first;
+    				this.lastName = last;
+    				this.age = age;
+			}
+
+			var myName = new person("Kartik", "Kannapur", 22);
+			var myOtherName = new person("Kitrak", "Rupannak", 22);
+    			</xmp>
+
+    			<ul>
+					<li class="ft-fragment step">Nested Notation</li>
+				</ul>
+
+    			<xmp class="ft-fragment step">	
+
+    			var person = {
+    				person1 : {firstName : "Kartik", lastName : "Kannapur"},
+    				person2 : {firstName : "Kitrak", lastName : "Rupannak"}
+    			}
+    			</xmp>
+
+    			
+			</div>
+
+			<div id="/section-4/page-5" class="ft-page" data-id="page-5">
+				<h1>JSON</h1>
+				<ul>
+					<li class="ft-fragment step"><strong>J</strong>ava<strong>S</strong>cript   <strong>O</strong>bject   <strong>N</strong>otation</li>
+
+					<li class="ft-fragment step">JSON is a syntax for storing and exchanging data.</li>
+					<li class="ft-fragment step">JSON can be used as an alternative to XML i.e replacement to XML parser.</p>
+					<li class="ft-fragment step">JSON Syntax == JavaScript Objects Syntax</li>
+
+				</ul>
+
+				<xmp class="ft-fragment step">
+			var text = '{"name":"Kartik Kannapur","org":"GDG Bangalore","age":"22"}'
+			var obj = JSON.parse(text);
+
+			> obj.name;
+			> obj.org;
+			> obj.age;
+				</xmp>
+
+				<ul>
+					<li class="ft-fragment step">XML Equivalent</li>
+				</ul>
+
+				<xmp class="ft-fragment step">
+			<text>
+				<name>Kartik Kannapur</name> <org>GDG Bangalore</org> <age>22</age>
+			</text>
+				</xmp>
+			</div>
+
+			<div id="/section-4/page-6" class="ft-page" data-id="page-6">
+				<p><strong>Chrome : JavaScript Console</strong></p>
+
+				<ul>
+					<li class="ft-fragment step">screen</li>
+					<li class="ft-fragment step">location</li>
+					<li class="ft-fragment step">History</li>
+				</ul>
+			</div>
+		</div>
+
+
+<!--DOM-->
+
+		<div class="ft-section" data-id="section-5">
+			<div id="/section-5/page-1" class="ft-page" data-id="page-1">
+				<h1><a href="file:///home/kartik/Desktop/JavaScript-Workshop-Presentation/index.html#/section-1/page-2">#</a>Document Object Model (DOM)</h1>
+
+				<ul>
+					<li class="ft-fragment step">DOM defines a standard for accessing documents.</li>
+
+					<li class="ft-fragment step">JavaScript is used to manipulate the DOM i.e change, add, delete HTML elements.</li>
+
+					<li class="ft-fragment step">HTML DOM Tree</li>
+
+					<center><img class="ft-fragment step" src="assets/img/dom_tree.gif"></center>
+				</ul>
+			</div>
+
+			<div id="/section-5/page-2" class="ft-page" data-id="page-2">
+				<h1>Document Object Model (DOM)</h1>
+
+				<ul>
+					<li class="ft-fragment step">In the DOM HTML elements are defined as Objects.</li>
+					<li class="ft-fragment step"><strong>Property</strong> can change elements & <strong>Method</strong> can add or delete elements.</li>
+
+					<li class="ft-fragment step"><strong>Chrome : JavaScript Console</strong></li>
+
+				</ul>
+
+				<xmp class="ft-fragment step">
+					> document.getElementById()
+					> document.getElementsByClassName()
+
+					> var x = document.getElementById()
+					> x.innerHTML = "___"
+
+					> document.createElement()
+				</xmp>
+				<ul>
+					<li class="ft-fragment step"> <a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/10.html" target="_blank">#10</a> Changing HTML Content</li>
+
+					<li class="ft-fragment step"> <a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/11.html" target="_blank">#11</a> Changing Attributes Value</li>
+
+					<li class="ft-fragment step">Similarly you can change CSS, Event Triggers etc.</li>
+				</ul>
+			</div>
+
+			<div id="/section-5/page-3" class="ft-page" data-id="page-3">
+				<h1>HTML DOM Navigation</h1>
+
+				<ul>
+					<li class="ft-fragment step">Everything in the HTML document is a <strong>node</strong>.</li>
+					<li class="ft-fragment step">JavaScript helps us navigate through nodes in the HTML DOM tree.</li>
+					<li class="ft-fragment step">Nodes can be created, modified & deleted.</li>
+
+				</ul>
+
+				<p class="ft-fragment step">Node Relationships</p>
+
+				<ul>
+					<li class="ft-fragment step">Nodes in a node tree have a hierarchical relationship.</li>
+					<li class="ft-fragment step">Parent - Child - Sibling</li>
+
+				</ul>
+			</div>
+
+			<div id="/section-5/page-3" class="ft-page" data-id="page-3">
+				<h1>HTML DOM Navigation</h1>
+
+				<center><img class="ft-fragment step" src="assets/img/nodetree.gif"></center>
+
+				<br>
+				<br>
+				<ul>
+					<li class="ft-fragment step"> <a href="file:////home/kartik/Desktop/JavaScript-Workshop-Code/12.html" target="_blank">Demo #12</a> Node Example</li>
+				</ul>
+			</div>
+		</div>
+
+<!--Google Apps Script-->
+		<div class="ft-section" data-id="section-6">
+			<div id="/section-6/page-1" class="ft-page" data-id="page-1">
+				<h1><a href="file:///home/kartik/Desktop/JavaScript-Workshop-Presentation/index.html#/section-1/page-2">#</a>Google Apps Script</h1>
+
+				<p><strong>Google Apps Script</strong> is a JavaScript based cloud scripting language that provides easy ways to automate tasks across Google Products & third party
+				services.</p>
+
+				<ul>
+					<li class="ft-fragment step">Editor in the Browser</li>
+					<li class="ft-fragment step">JavaScript Runtime in the Cloud</li>
+					<li class="ft-fragment step">Don’t hate, Automate !</li>
+
+				</ul>
+
+				<center class="ft-fragment step"><a href="#/section-1/page-2"><img src="assets/img/appsScript.png"></a></center>
+
+			</div>
+
+			<div id="/section-6/page-2" class="ft-page" data-id="page-2">
+				<h1>What can you do with Apps Script?</h1>
+				<ul>
+					<li class="ft-fragment step"><strong>Google Apps :</strong> Calendar, Contacts, Document, Drive, Forms, Gmail, Maps</li>
+					<li class="ft-fragment step"><strong>Advanced Google Services :</strong> AdSense, Analytics, BigQuery, URL Shortener,YouTube</li>
+					<li class="ft-fragment step"><strong>Script Services :</strong> Base, Cache, Charts, ScriptDB,Url Fetch</li>
+
+				</ul>
+
+				<h1 class="ft-fragment step">Getting Started ...</h1>
+				<ul>
+					<li class="ft-fragment step"><strong>Standalone Scripts</strong></li>
+				</ul>
+				<xmp class="ft-fragment step">
+					https://script.google.com
+					Google Drive > Create > Script
+				</xmp>
+
+				<ul>
+					<li class="ft-fragment step"><strong>Container-bound Scripts</strong></li>
+				</ul>
+				<xmp class="ft-fragment step">
+					Google Docs, Sheets, Forms
+					Tools > Script Editor
+					
+					Sites
+					More > Manage Site > Apps Scriptst
+				</xmp>
+
+
+			</div>
+
+
+			<div id="/section-6/page-3" class="ft-page" data-id="page-3">
+				<h1 class="ft-fragment step"><a href="http://script.google.com/">#</a> Introduction to the Script Editor</h1>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h1 class="ft-fragment step"><a href="http://goo.gl/xapGIQ">#</a> Hello World</h1>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h1 class="ft-fragment step"><a href="http://goo.gl/EhJweh">#</a> Today's Agenda</h1>
+			
+			</div>
+
+			<div id="/section-6/page-4" class="ft-page" data-id="page-4">
+				<h1>Quotas for Google Services</h1>
+
+				<ul>
+					<li class="ft-fragment step">Apps Script services impose daily quota</li>
+
+					<li class="ft-fragment step">Apps Script services impose daily quotas. If you exceed your quota or limitation, the script will throw an exception and terminate execution</li>
+				</ul>
+
+
+				<center class="ft-fragment step"><a href="#/section-1/page-2"><img src="assets/img/AppsScriptQuota.png"></a></center>	
+			</div>
+
+			<div id="/section-6/page-4" class="ft-page" data-id="page-4">
+				<h1>List of Demos</h1>
+
+				<ul>
+					<li class="ft-fragment step"><a href="http://goo.gl/MR4VsX">#</a> Google Translate</li>
+
+					<li class="ft-fragment step"><a href="http://goo.gl/7qJvYc">#</a> Math - All operators in Apps Script</li>
+
+					<li class="ft-fragment step"><a href="http://goo.gl/k7kdaE">#</a> Sending Mails - Automated</l>
+
+					<li class="ft-fragment step"><a href="http://goo.gl/ebpdHH">#</a> Get Directions</li>
+
+					<li class="ft-fragment step"><a href="http://goo.gl/Ysp1Fa">#</a> Maps - Bangalore to Mysore</l>	
+
+				</ul>	
+			</div>
+		</div>
+		
+<!--About GDG Bangalore & Kartik Kannapur-->
+		<div class="ft-section" data-id="section-7">
+			<div id="/section-7/page-1" class="ft-page" data-id="page-1">
+				<h1>About us</h1>
+
+				<a href="#/section-1/page-2"><img src="assets/img/gdg-bangalore.png"></a>
+
+			</div>
+
+			<div id="/section-7/page-1" class="ft-page" data-id="page-1">
+				<h1>Thank You</h1>
+
+
+				<ul>
+					<li>Email : kartikkannapur@gmail.com</li>
+					<li>Google+ : +KartikKannapur27</li>
+					<li>Twitter : @KartikKannapur</li>
+					<li>GitHub : https://github.com/KartikKannapur</li>
+				</ul>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<ul>
+
+					<li>Slideshare Link : http://goo.gl/78GI6R</li>
+					<li>Presentation Code : http://goo.gl/0ajKjj</li>
+					<li>Code : http://goo.gl/mEKWDQ</li>
+				</ul>
+
+			</div>
+			
+		</div>
+		
+	</div>
+<!--End of the Presentation-->
+
+	<script src="js/brav1toolbox.js"></script>
+	<script src="js/flowtime.js"></script>
+	<script src="assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1228618-10']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		Flowtime.parallaxInPx(true);
+		//
+		// event management
+		// Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		Flowtime.onNavigation(onNavigation);
+		function onNavigation(e)
+		{
+			_gaq.push(['_trackEvent', 'Flowtime', 'Navigation', cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", "")]);
+			// console.log(cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", ""));
+			cacheTitle = document.title.replace("Flowtime.js | ", "");
+			//console.log('section', e.section, 'sectionIndex', e.sectionIndex);
+			//console.log('page', e.page, 'pageIndex', e.);
+			//console.log('pastSectionIndex', e.pastSectionIndex, 'pastPageIndex', e.pastPageIndex);
+			//console.log('prevSection', e.prevSection);
+			//console.log('nextSection', e.nextSection);
+			//console.log('prevPage', e.prevPage);
+			//console.log('nextPage', e.nextPage);
+			//console.log('fragment', e.fragment, + 'fragmentIndex', e.fragmentIndex);
+			//console.log("isOverview", e.isOverview);
+			//console.log('progress:', e.progress, 'total:', e.total);
+			// var value = Math.round(e.progress * 100 / e.total);
+			// console.log('Completion: ' + value + '%');
+		}
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+	<script type="text/javascript" src="http://slidemote.jit.su/slidemote.js#flowtime"></script>
+</body>
+</html>
+>>>>>>> master
