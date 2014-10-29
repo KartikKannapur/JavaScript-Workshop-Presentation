@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style type="text/css">
+  #rectangle{
+    width:320px;
+    height:240px;
+  }
+  </style>
+</head>
+
+<body>
+  <script type="text/javascript">
+  function enter(box){
+   box.style.backgroundColor = 'red';
+ }
+
+ function leave(box){
+   box.style.backgroundColor = 'blue';
+ }
+ </script>
+ <div id="rectangle" onmouseover="enter(this)" onmouseout="leave(this)">
+  <center>Hover over me!</center>
+</div>
+</body>
+</html>

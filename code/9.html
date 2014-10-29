@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JavaScript Calculator</title>
+
+	<script type="text/javascript">
+	function add(a,b) {
+		alert(a+b);
+	}
+
+	function sub(a,b) {
+		alert(a-b);
+	}
+
+	function mul(a,b) {
+		alert(a*b);
+	}
+
+	function div(a,b) {
+		alert(a/b);
+	}
+	</script>
+</head>	
+
+<body>
+	<script type="text/javascript">
+
+	alert('Calculator Started!');
+	var first_num = parseInt(prompt('Enter the first number: '));
+	var second_num = parseInt(prompt('Enter the second number: '));
+
+	var operation = prompt('Which operation = Add,Sub,Mul,Div ? ');
+
+	if (operation == 'Add') {
+		add(first_num,second_num);
+	};
+
+	if (operation == 'Sub') {
+		sub(first_num,second_num);
+	};
+
+	if (operation == 'Mul') {
+		mul(first_num,second_num);
+	};
+
+	if (operation == 'Div') {
+		div(first_num,second_num);
+	};
+	</script>	
+</body>
+</html>
